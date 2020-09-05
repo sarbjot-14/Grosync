@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:grosync/screens/a_group.dart';
 import 'package:grosync/screens/shopping_list.dart';
 
 import 'screens/create_group.dart';
@@ -22,6 +23,13 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       var arg = settings.arguments;
       return MaterialPageRoute(
           builder: (context) => Groups(
+                argument: arg,
+              ));
+
+    case 'a_group':
+      var arg = settings.arguments;
+      return MaterialPageRoute(
+          builder: (context) => A_group(
                 argument: arg,
               ));
 

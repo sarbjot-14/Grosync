@@ -3,3 +3,4 @@ const String Join_group_page = 'join_group';
 const String Create_group_page = 'create_group';
 const String Shopping_list = 'shopping_list';
 const String Groups = 'groups';
+const String A_group = 'a_group';

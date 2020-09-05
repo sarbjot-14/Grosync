@@ -33,12 +33,14 @@ class Drawer_widget extends StatelessWidget {
                 title: Text("All Items"),
                 onTap: () {
                   Navigator.of(context).pop();
+                  Navigator.pushNamed(context, Groups, arguments: "All Items");
                 },
               ),
               ListTile(
                 title: Text("Dishes"),
                 onTap: () {
                   Navigator.of(context).pop();
+                  Navigator.pushNamed(context, Groups, arguments: "Dishes");
                 },
               ),
               ListTile(
@@ -46,13 +48,15 @@ class Drawer_widget extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pop();
                   Navigator.pushNamed(context, Groups,
-                      arguments: "passed in weeee");
+                      arguments: "Food Groups");
                 },
               ),
               ListTile(
                 title: Text("Custom Groups"),
                 onTap: () {
                   Navigator.of(context).pop();
+                  Navigator.pushNamed(context, Groups,
+                      arguments: "Custom Groups");
                 },
               ),
             ]),
